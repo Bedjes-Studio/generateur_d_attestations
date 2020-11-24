@@ -1,0 +1,3 @@
+include ':pdfwriter'
+include ':app'
+rootProject.name = "Balance Ton Papier"
