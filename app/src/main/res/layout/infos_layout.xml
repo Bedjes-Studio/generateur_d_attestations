@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewMerci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space1"
+
+            android:text="Merci de saisir vos informations"
+            />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewMerci"
+            />
+
+        <EditText
+            android:id="@+id/editTextPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space2"
+
+
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Prénom"
+            />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextPrenom"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space3"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nom"
+            />
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextNom"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextDateNaissance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space4"
+
+            android:ems="10"
+            android:focusableInTouchMode="false"
+            android:hint="Date de Naissance"
+            />
+
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextDateNaissance"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextLieuNaissance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space5"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Lieu de Naissance"
+            />
+
+        <Space
+            android:id="@+id/space6"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextLieuNaissance"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextAdresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space6"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Adresse"
+            />
+
+        <Space
+            android:id="@+id/space7"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextAdresse"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space7"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Ville"
+            />
+
+        <Space
+            android:id="@+id/space8"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextVille"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextCodePostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space8"
+
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Code postal"
+            />
+
+        <Space
+            android:id="@+id/space9"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextCodePostal"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextDateSortie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space9"
+
+            android:ems="10"
+            android:focusableInTouchMode="false"
+            android:hint="Date de Sortie"
+            />
+
+        <Space
+            android:id="@+id/space10"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextDateSortie"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextHeureSortie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space10"
+
+            android:ems="10"
+            android:focusableInTouchMode="false"
+            android:hint="Heure de Sortie"
+            />
+
+        <Button
+            android:id="@+id/buttonMotif"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_below="@id/editTextHeureSortie"
+
+            android:text="Motif" />
+
+        <Button
+            android:id="@+id/buttonSauver"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/editTextHeureSortie"
+
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+
+            android:text="Sauvegarder le profil" />
+
+    </RelativeLayout>
+
+</ScrollView>

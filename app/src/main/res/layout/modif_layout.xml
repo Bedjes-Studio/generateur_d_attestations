@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewMerci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space1"
+
+            android:text="Merci de saisir votre motif"
+            />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewMerci"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space2"
+
+            android:ems="15"
+            android:text="Déplacement professionel"
+            />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif1"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space3"
+
+            android:ems="15"
+            android:text="Achats de première nécessité"
+            />
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif2"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space4"
+
+            android:ems="15"
+            android:text="Consultation, examens ou soins"
+            />
+
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif3"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space5"
+            android:layout_centerHorizontal="true"
+
+            android:ems="15"
+            android:text="Motif familial impérieux" />
+
+        <Space
+            android:id="@+id/space6"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif4"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space6"
+
+            android:ems="15"
+            android:text="Handicap ou accompagnant"
+            />
+
+
+        <Space
+            android:id="@+id/space7"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif5"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space7"
+
+            android:ems="15"
+            android:text="Balade quotidienne"
+            />
+
+
+        <Space
+            android:id="@+id/space8"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif6"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space8"
+
+            android:ems="15"
+            android:text="Convocation judiciaire ou administrative"
+            />
+
+        <Space
+            android:id="@+id/space9"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif7"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space9"
+
+            android:ems="15"
+            android:text="Mission d'intérêt général"
+            />
+
+        <Space
+            android:id="@+id/space10"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextMotif8"
+            />
+
+        <CheckBox
+            android:id="@+id/editTextMotif9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space10"
+
+            android:ems="15"
+            android:text="Chercher un enfant à l'école"
+            />
+
+        <Button
+            android:id="@+id/buttonInfos"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/editTextMotif9"
+
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+
+            android:text="Infos"
+
+            />
+
+        <Button
+            android:id="@+id/buttonCreation"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/editTextMotif9"
+
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+
+            android:text="Générer l'attestation"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

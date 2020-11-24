@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space1"
+            android:ems="23"
+            android:gravity="center_horizontal" />
+
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textResult"
+            />
+
+        <Button
+            android:id="@+id/buttonOuvir"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space5"
+            android:visibility="invisible"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:textSize="20sp"
+            android:text="Ouvrir"
+
+            />
+
+        <Space
+            android:id="@+id/space6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/buttonOuvir"
+            />
+
+        <TextView
+            android:id="@+id/textViewBJS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space6"
+            android:gravity="center"
+            android:visibility="invisible"
+
+            android:text="Merci d'avoir utilisé notre application !\nL'équipe Bedjes Studio"
+            />
+
+        <Space
+            android:id="@+id/space7"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewBJS"
+            />
+
+        <ImageView
+            android:id="@+id/logoBJS"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/space7"
+            android:visibility="invisible"
+            android:src="@drawable/logo_bjs"
+            />
+
+        <Button
+            android:id="@+id/buttonMotif"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="Motif"
+
+            />
+
+    </RelativeLayout>
+</ScrollView>
