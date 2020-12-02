@@ -8,8 +8,8 @@ android {
         applicationId "com.studio.bedjes.generateur_dattestations"
         minSdkVersion 15
         targetSdkVersion 30
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 7
+        versionName "1.0.6"
 
         testInstrumentationRunner "androidx.modif_layout.runner.AndroidJUnitRunner"
     }

@@ -88,6 +88,7 @@ String motif = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
           loadInfosScreen();
           chargerProfil(this);
     }
@@ -475,7 +476,7 @@ String motif = "";
                 "\nNom: " + nom + ";" +
                 "\nPrenom: " + prenom + ";" +
                 "\nNaissance: " + dateNaissance + ";" +
-                "\nAdresse: " + adresse + ";" +
+                "\nAdresse: " + adresse + " " + codePostal + " " + ville + ";" +
                 "\nSortie: " + dateSortie + " a " + heureSortie + ";" +
                 "\nMotif : " + motif;
         try {
@@ -516,8 +517,8 @@ String motif = "";
 
         if ( motifs[2] == 1) {
 
-            writer.addLine(78,465,98,485);
-            writer.addLine(78,485,98,465);
+            writer.addLine(78,492,98,512);
+            writer.addLine(78,512,98,492);
 
             motif += "sante, ";
 
@@ -525,8 +526,8 @@ String motif = "";
 
         if ( motifs[3] == 1) {
 
-            writer.addLine(78,425,98,445);
-            writer.addLine(78,445,98,425);
+            writer.addLine(78,465,98,485);
+            writer.addLine(78,485,98,465);
 
             motif += "famille, ";
 
@@ -534,8 +535,8 @@ String motif = "";
 
         if ( motifs[4] == 1) {
 
-            writer.addLine(78,387,98,407);
-            writer.addLine(78,407,98,387);
+            writer.addLine(78,427,98,447);
+            writer.addLine(78,447,98,427);
 
             motif += "handicap, ";
 
@@ -543,8 +544,8 @@ String motif = "";
 
         if ( motifs[5] == 1) {
 
-            writer.addLine(78,360,98,380);
-            writer.addLine(78,380,98,360);
+            writer.addLine(78,400,98,420);
+            writer.addLine(78,420,98,400);
 
             motif += "sport_animaux, ";
 
@@ -552,8 +553,8 @@ String motif = "";
 
         if ( motifs[6] == 1) {
 
-            writer.addLine(78,277,98,297);
-            writer.addLine(78,297,98,277);
+            writer.addLine(78,302,98,322);
+            writer.addLine(78,322,98,302);
 
             motif += "convocation, ";
 
@@ -561,8 +562,8 @@ String motif = "";
 
         if ( motifs[7] == 1) {
 
-            writer.addLine(78,252,98,272);
-            writer.addLine(78,272,98,252);
+            writer.addLine(78,277,98,297);
+            writer.addLine(78,297,98,277);
 
             motif += "missions, ";
 
@@ -570,8 +571,8 @@ String motif = "";
 
         if ( motifs[8] == 1) {
 
-            writer.addLine(78,225,98,245);
-            writer.addLine(78,245,98,225);
+            writer.addLine(78,250,98,270);
+            writer.addLine(78,270,98,250);
 
             motif += "enfants, ";
 
@@ -580,26 +581,25 @@ String motif = "";
 
     }
 
-public void genererPDF() {
+public void genererPDF()    {
 
         // création du pdf
     PDFWriter writer = new PDFWriter(PaperSize.FOLIO_WIDTH, PaperSize.FOLIO_HEIGHT);
 // saisie de la font
     writer.setFont(StandardFonts.TIMES_ROMAN, StandardFonts.TIMES_ROMAN, StandardFonts.WIN_ANSI_ENCODING);
 
-    writer.addText(100, 870, 17, "ATTESTATION DE DÉPLACEMENT DÉROGATOIRE");
-    writer.addText(90, 845, 11, " En application du décret n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales ");
-    writer.addText(90, 835, 11, "nécessaires pour faire face à l'épidémie de covid-19 dans le cadre de l'état d'urgence sanitaire");
+    writer.addText(100, 865, 17, "ATTESTATION DE DÉPLACEMENT DÉROGATOIRE");
+    writer.addText(90, 835, 11, " En application du décret n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales ");
+    writer.addText(90, 825, 11, "nécessaires pour faire face à l'épidémie de COVID-19 dans le cadre de l'état d'urgence sanitaire");
 
 
-    writer.addText(75, 805, 12, "Je soussigné(e),");
     writer.addText(75, 785, 12, "Mme/M. : " + prenom + " " + nom);
     writer.addText(75, 765, 12, "Né(e) le : " + dateNaissance);
     writer.addText(300, 765, 12, "à : " + lieuNaissance);
     writer.addText(75, 745, 12, "Demerant : " + adresse + " " + codePostal + " " + ville);
     writer.addText(75, 725, 12, "certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par le décret");
     writer.addText(75, 710, 12, "n°2020-1310 du 29 octobre 2020 prescrivant les mesures générales nécessaires pour faire face à");
-    writer.addText(75, 695, 12, "l'épidémie de covid-19 dans le cadre de l'état d'urgence sanitaire :");
+    writer.addText(75, 695, 12, "l'épidémie de COVID-19 dans le cadre de l'état d'urgence sanitaire :");
 
     writer.addText(75, 680, 10, "Note : les personnes souhaitant bénéficier de l'une de ces exceptions doivent se munir s'il y a lieu, lors de leurs");
     writer.addText(75, 670, 10, "déplacements hors de leur domicile, d'un document leur permettant de justifier que le déplacement considéré entre");
@@ -607,54 +607,53 @@ public void genererPDF() {
 
     writer.addRectangle(78, 625,20, 20);
     writer.addText(110, 635, 12, "1. Déplacements entre le domicile et le lieu d'exercice de l'activité professionnelle ou un");
-    writer.addText(110, 620, 12, "établissement d'enseignement ou de formation, déplacements professionnels ne pouvant");
-    writer.addText(110, 605, 12, "être différés, déplacements pour un concours ou un examen. ");
+    writer.addText(110, 620, 12, "établissement d'enseignement ou de formation ; déplacements professionnels ne pouvant");
+    writer.addText(110, 605, 12, "être différés ; déplacements pour un concours ou un examen ;");
 
     writer.addText(110, 590, 10, "Note : à utiliser par les travailleurs non-salariés, lorsqu'ils ne peuvent disposer d'un justificatif de déplacement");
     writer.addText(110, 580, 10, " établi par leur employeur.");
 
     writer.addRectangle(78, 545,20, 20);
-    writer.addText(110, 555, 12, "2. Déplacements pour effectuer des achats de fournitures nécessaires à l'activité");
-    writer.addText(110, 540, 12, "professionnelle, des achats de première nécessité³ dans des établissements dont les");
-    writer.addText(110, 525, 12, "activités demeurent autorisées, le retrait de commande et les livraisons à domicile.");
+    writer.addText(110, 555, 12, "2. Déplacements pour se rendredans un établissement culturel autorisé ou un lieu de culte ; ");
+    writer.addText(110, 540, 12, "déplacements pour effectuer des achats de biens, pour des services dont la fourniture est autorisée,");
+    writer.addText(110, 525, 12, "pour les retraits de commandes et les livraisons à domicile ;");
 
-    writer.addText(110, 510, 10, "Note : achats de première nécessité y compris les acquisitions à titre gratuit (distribution de denrées alimentaires...)");
-    writer.addText(110, 500, 10, "et les déplacements liés à la perception de prestations sociales et au retrait d'espèces.");
+
+    writer.addRectangle(78, 492,20, 20);
+    writer.addText(110, 500, 12, "3. Consultations, examens et soins ne pouvant être assurés à distance et achats de médicaments ;");
+    //writer.addText(110, 485, 12, "de médicaments");
 
     writer.addRectangle(78, 465,20, 20);
-    writer.addText(110, 475, 12, "3. Consultations, médicaments. examens et  soins ne   pouvant  être  assurés  à  distance  et l'achat");
-    writer.addText(110, 460, 12, "de médicaments");
+    writer.addText(110, 475, 12, "4. Déplacements pour motif familial impérieux, pour l'assistance aux personnes vulnérables ");
+    writer.addText(110, 460, 12, "et précaires ou la garde d'enfants ;");
 
-    writer.addRectangle(78, 425,20, 20);
-    writer.addText(110, 435, 12, "4. Déplacements pour motif familial impérieux, pour l'assistance aux personnes vulnérables ");
-    writer.addText(110, 420, 12, "et précaires ou la garde d'enfants.");
+    writer.addRectangle(78, 427,20, 20);
+    writer.addText(110, 435, 12, "5. Déplacement des personnes en situation de handicap et leur accompagnant. ;");
 
-    writer.addRectangle(78, 387,20, 20);
-    writer.addText(110, 395, 12, "5. Déplacement des personnes en situation de handicap et leur accompagnant.");
+    writer.addRectangle(78, 400,20, 20);
+    writer.addText(110, 410, 12, "6. Déplacements en plein air ou vers un lieu de plein air, sans changement du lieu de");
+    writer.addText(110, 395, 12, "résidence, dans la limite de trois heures quotidiennes et dans un rayon maximal de vingt");
+    writer.addText(110, 380, 12, "kilomètres autour du domicile, liés soit à l'activité physique ou aux loisirs individuels, à");
+    writer.addText(110, 365, 12, "l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes,");
+    writer.addText(110, 350, 12, "soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux");
+    writer.addText(110, 335, 12, "besoins des animaux de compagnie.");
 
-    writer.addRectangle(78, 360,20, 20);
-    writer.addText(110, 370, 12, "6. Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal");
-    writer.addText(110, 355, 12, "d'un  kilomètre  autour  du  domicile,  liés  soit  à  l'activité  physique  individuelle  des");
-    writer.addText(110, 340, 12, "personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec");
-    writer.addText(110, 325, 12, "d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un ");
-    writer.addText(110, 310, 12, "même domicile, soit aux besoins des animaux de compagnie.");
+
+    writer.addRectangle(78, 302,20, 20);
+    writer.addText(110, 310, 12, "7. Convocation judiciaire ou administrative et pour se rendre dans un service public ;");
 
     writer.addRectangle(78, 277,20, 20);
-    writer.addText(110, 285, 12, "7. Convocation judiciaire ou administrative et pour se rendre dans un service public");
+    writer.addText(110, 285, 12, "8. Participation à des missions d'intérêt général sur demande de l'autorité administrative ;");
 
-    writer.addRectangle(78, 252,20, 20);
-    writer.addText(110, 260, 12, "8. Participation à des missions d'intérêt général sur demande de l'autorité administrative ");
-
-    writer.addRectangle(78, 225,20, 20);
-    writer.addText(110, 235, 12, "9. Déplacement  pour  chercher  les  enfants  à  l'école  et  à  l’occasion  de  leurs  activités ");
-    writer.addText(110, 220, 12, "périscolaires");
+    writer.addRectangle(78, 250,20, 20);
+    writer.addText(110, 260, 12, "9. Déplacement  pour  chercher  les  enfants  à  l'école  et  à  l'occasion  de  leurs  activités ");
+    writer.addText(110, 245, 12, "périscolaires ;");
 
     writer.addText(75, 165, 12, "Fait à : " + ville);
     writer.addText(75, 140, 12, "Le : " + dateSortie);
-    writer.addText(300, 140, 12, "à : " + heureSortie);
+    writer.addText(250, 140, 12, "à : " + heureSortie);
     writer.addText(75, 115, 12, "(Date et heure de début de sortie à mentionner obligatoirement)");
 
-    writer.addText(75, 90, 12, "Signature : ");
 
     writer.addImage(395,55, genererQRCode(150));
 
